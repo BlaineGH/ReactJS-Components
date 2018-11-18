@@ -1,0 +1,84 @@
+/*=====form and transparent background styling=====*/
+.loginformdiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-align: center;
+}
+/*=====login h2 tag styling=====*/
+.loginformdiv h2 {
+  color: #fff;
+  text-align: center;
+}
+/*=====Label/input placement and alignment=====*/
+.loginformdiv .loginforminput {
+  position: relative;
+}
+/*=====input box styling=====*/
+.loginformdiv .loginforminput input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border: none;
+  color: #fff;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+/*=====label styleing=====*/
+.loginformdiv .loginforminput label {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+/*=====label move/valid check=====*/
+.loginformdiv .loginforminput input:focus ~ label,
+.loginformdiv .loginforminput input:valid ~ label {
+  top: -18px;
+  left: 0;
+  color: #03a9f4;
+  font-size: 12px;
+}
+/*=====Submit button=====*/
+.loginformdiv .loginformsubmit button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #03a9f4;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 1%;
+}
+.loginformdiv .loginforminput ul li p {
+  list-style: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: none;
+  color: #fff;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.loginformdiv .loginforminput ul li {
+  list-style: none;
+}

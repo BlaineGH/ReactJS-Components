@@ -1,0 +1,47 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  background: #262626;
+  text-align: right;
+  padding-top: 15%;
+}
+.sidebarlinks {
+  position: relative;
+}
+.sidebarlinks li {
+  list-style: none;
+}
+.sidebarlinks li a {
+  display: block;
+  text-decoration: none;
+  padding: 1%;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.sidebarlinks li a:hover {
+  color: #ffeb3b;
+  text-decoration: none;
+}
+.sidebarlinks li a:before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+  font-size: 3em;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+  font-family: initial;
+}
+.sidebarlinks li a:hover:before {
+  opacity: 0.1;
+  top: 50%;
+}

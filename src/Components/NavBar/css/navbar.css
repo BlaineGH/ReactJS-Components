@@ -1,0 +1,30 @@
+.topnavcontainer {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+}
+.topnavlinks {
+  text-align: center;
+  background: transparent;
+}
+
+.topnavlinks li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  padding: 1%;
+}
+
+.topnavlinks li a {
+  text-decoration: none;
+  font-size: 1.3em;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+  color: Black;
+  font-weight: bold;
+}
+
+.topnavlinks li a:hover {
+  color: red;
+}
